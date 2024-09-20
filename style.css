@@ -1,0 +1,494 @@
+
+.wrapper{
+    grid-area: Firstsection;
+    min-height: 755px;
+    background:url("/img/cyclingman.jpg") no-repeat center center;
+    background-size: cover;
+    display: grid;
+    /*align-content:center;*/
+    color: white;
+  }
+
+  .featured{
+    text-align:center;
+    font-size: 50px;
+  }
+
+  /*contenttrainers*/
+  .contentTrainers{
+    grid-area: Secondsection;
+    background:white;
+  }
+.imgTrainers{
+    max-height: 500px;
+}
+
+  .trainers{
+    max-width: 100%;
+    margin:auto 20rem;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    grid-gap: 10px;
+    justify-content:center;
+    
+                         
+  }
+
+  .btn{
+    padding:10px 15px;
+    background: black;
+    color: white;
+    margin-left:8rem;
+  }
+
+  /*membership*/
+  .membership{
+    grid-area: thrirdsection;
+    background: url("/img/gymreal.jpg")no-repeat center center;
+    background-size: cover;
+    max-height: 800px;
+  }
+
+ .membership >h2{
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 50px;
+  }
+
+  .sampleText{
+    max-width: 40%;
+    margin:50px 150px;
+    color: white;
+  }
+
+  #check{
+   margin-bottom: auto;
+   font-size: 3rem;
+  }
+
+  .btn2{
+    padding:15px 30px;
+    background: white;
+    color: rgb(4, 4, 4);
+    margin: 50px 100px;
+    border:solid 4px rgb(5, 5, 5);
+  }
+
+  /*next sectoion*/
+
+  .man{
+    background: white;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .imgman{
+    max-width: 400px;
+    max-height: 400px;
+    align-content: center;
+    margin: 200px 40px;
+
+  }
+  .about{
+    background: black;
+    color: white;
+    max-width: 100%;
+  }
+
+  .about >p{
+    margin: 60px;
+    word-spacing:50%;
+    font-size:20px;
+  }
+
+  #aboutus_text{
+    width: 40rem;
+  }
+
+  
+  .about >h1{
+    margin: 60px;
+    word-spacing:50%;
+  }
+
+
+
+  .number{
+    width: 10rem;
+  }
+
+  
+
+  .number >h1{
+    align-items: center;
+    font-size: 70px;
+  }
+
+  .aboutUs{
+    grid-area: fourthsection;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    height: 90vh;
+  }
+
+  /*what people say*/
+  .people{
+    grid-area: fifthsection;
+    background: url("/img/boxingman.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    height: 100vh;
+  }
+
+.people >div>h2{
+  margin-left: 20rem;
+  font-size: 50px;
+}
+
+.people >div>p{
+  margin-left: 20rem;
+  width: 50%;
+  font-size: 20px;
+}
+
+.nick{
+  margin-left: 20rem;
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.btn3{
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  margin-left: 20rem;
+  border: 2px solid beige;
+}
+
+/*join the movement*/
+.movement{
+  grid-area: sixthsection;
+background: white;
+max-width: 100%;
+display: grid;
+grid-template-columns:repeat(2,1fr);
+grid-gap: 10px;
+justify-content:center;
+    
+}
+
+
+.boxingimg{
+  max-height: 40rem;
+  max-width: 50rem;
+  margin-left: 5rem;
+  margin-bottom: -1rem;
+}
+
+.join_movement{
+  width: 50%;
+  margin: 0 auto;
+  margin-top:60px;
+}
+
+/*reservation*/
+.reservation{
+  grid-area: seventhsection;
+  background: black;
+  color: rgb(252, 250, 250);
+  height:90vh;
+  display: block;
+}
+
+.heading_reservation{
+  max-width: 50%;
+  margin-left: 15%;
+  color: white;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 15rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  width: 48%; /* Adjust to ensure two fields fit in one row */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgb(150, 144, 144);
+  background-color: rgb(55, 53, 53) ;
+}
+
+
+.btn4{
+  width: 8rem;
+  height: 3rem;
+  border: 1px solid white;
+  background-color: black;
+}
+
+#messsage{
+  background:  rgb(55, 53, 53) ;
+  margin-bottom: 1rem;
+}
+
+
+
+/*responsiveness*/
+/*Tablet media query*/
+@media (min-width:769px) and (max-width:1024px){
+body{
+  font-size: 16px;
+}
+  .wrapper{
+    width:135%;
+  }
+  .nav-wrapper{
+    grid-column: 1/5;
+  }
+.wrapper .featured{
+  font-size: 40px;
+  text-align: center;
+  margin-left: 15rem;
+}
+
+.trainers{
+  grid-template-columns: 1fr;
+}
+
+.contentTrainers{
+  width:135%;
+}
+
+.membership{
+  width:100%;
+}
+
+.membership .sampleText{
+  width: 100%;
+}
+
+.aboutUs{
+  width:135%;
+}
+
+#aboutus_text{
+  width: 20rem;
+  font-size: 15px;
+}
+#number_01{
+  font-size: 6rem;
+}
+
+.people{
+  width:135%;
+
+}
+.man{
+  width: 40%;
+  height: 40%;
+}
+
+.movement{
+  grid-template-columns: 1fr;
+}
+
+.boxingimg{
+  margin-left: 10rem;
+}
+
+
+.join_movement{
+  font-size: small;
+}
+
+.reservation{
+  width: 135%;
+  height: 135%;
+}
+
+.form{
+  max-width: 100%;
+  margin-left: 15%;
+  color: rgb(209, 204, 204);
+}
+#Date{
+  width: 21rem;
+}
+
+#message{
+  width: 52rem;
+}
+
+
+}
+
+
+/*mobile media query*/
+@media(min-width:300px) and (max-width:768px){
+.wrapper{
+  width: 100%;
+  grid-template-areas: 
+  "Firstsection Firstsection Firstsection"
+  "Secondsection Secondsection Secondsection"
+  "thrirdsection thrirdsection thrirdsection"
+  "fourthsection fourthsection fourthsection"
+  "fifthsection fifthsection fifthsection"
+  "sixthsection sixthsection sixthsection"
+  "seventhsection seventhsection seventhsection";
+}
+.wrapper .featured{
+  font-size: 20px;
+  margin-top: 18rem;
+  margin-left:-5rem;
+  
+}
+
+.contentTrainers{
+  width: 100%;
+ margin-left: 2rem;
+}
+
+.contentTrainers .featured{
+  font-size: 30px;
+  margin-left: -5rem;
+}
+
+.trainers{
+  grid-template-columns: 1fr;
+  margin:0 auto;
+}
+
+.trainers_text{
+width: 70%;
+}
+
+.membership{
+  width: 100%;
+  height:100%;
+  margin-left: 0rem;
+}
+
+.membership >h2{
+  font-size: 20px;
+  margin-left: 1.2rem;
+}
+
+#check{
+  font-size: 15px;
+  max-width: 100rem;
+}
+.sampleText{
+  margin-top: 0rem;
+  width: 135%;
+  margin-bottom:2rem ;
+}
+.btn2{
+  margin-top:-5rem;
+ 
+
+}
+.aboutUs{
+  width: 100%;
+  max-height: 100px;
+  grid-template-columns:1fr;
+  margin-bottom: 100rem;
+}
+
+
+
+
+#aboutus_text{
+ max-width: 80%;
+ margin-left: 1rem;
+ font-size: 15px;
+  
+
+}
+
+
+
+.about{
+  width: 56%;
+  
+}
+
+.man{
+  width: 50%;
+  height: 50%;
+  margin-left: -3rem;
+  margin-top: 0rem;
+}
+
+#number_01{
+  text-align: center;
+  margin-left: 8rem;
+}
+
+.people{
+ width: 100%;
+ margin-top: -15rem;
+}
+
+.people_section{
+  margin-left: -18rem;
+  font-size: medium;
+
+}
+
+
+.movement{
+  width: 135%;
+  grid-template-columns:1fr ;
+}
+
+.join_movement{
+  font-size: small;
+  margin-left: 8rem;
+}
+
+
+.boxingman{
+  margin-left: 0rem;
+}
+
+.reservation{
+  width: 115%;
+  height: 135%;
+}
+
+
+.form-row{
+  flex-direction: column;
+}
+
+.form_contain{
+  margin-left: 5rem;
+}
+
+input{
+  width: 15rem;
+}
+
+
+
+}
